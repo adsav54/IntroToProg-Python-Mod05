@@ -41,7 +41,6 @@ except FileNotFoundError as e:  # this exception block will create an empty file
     print("No file exists. Creating an empty file...\n")
     file = open(FILE_NAME, "w")  # opening a file that doesn't exist in write mode creates it
     file.close()
-    file = open(FILE_NAME, "r")
 except Exception as e:
     print("-- Technical Error Message -- ")
     print("Built-In Python error info: ")
